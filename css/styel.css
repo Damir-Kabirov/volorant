@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+@font-face {
+    font-family: "Druk Wide";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Roboto"),
+         /* Если не получилось, загрузит woff2 */
+         url("../fonts/Druk-Wide-Medium.woff2") format("woff2"),
+         /* Если браузер не поддерживает woff2, загрузит woff */
+         url("../fonts/Druk-Wide-Medium.woff") format("woff"),
+         url("../fonts/Druk-Wide-Medium.ttf") format("ttf");
+  }
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.header{
+    padding: 36px 60px;
+    background-color: #1F2326;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 14px;
+}
+.logo__slash{
+    display: inline-block;
+    width: 2px;
+    height: 42px;
+    background-color: #FFF;
+    margin-left: 40px;
+}
+.logo__img{
+    margin-left: 40px;
+    
+}
+.nav__list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    color: #FFF;
+}
+.nav__list>li+li{
+    margin-left: 20px;
+}
+.nav__link{
+    text-decoration: none;
+    color: #FFF;
+}
+.account-menu{
+    display: flex;
+    align-items: center;
+}
+.account__img{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right: 16px;
+}
+.account__name{
+    margin-right: 16px;
+}
+.drop-btn{
+    cursor: pointer;
+}
+/* Section Hero */
+.hero{
+    min-height: 1009px;
+    height: 100vh;
+    background-blend-mode: multiply;
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-color: #FF4656;
+    display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+.hero__header{
+    height: 100%;
+    width: 250px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.hero__title{
+    font-family: 'Druk Wide', sans-serif;
+    font-weight: 400;
+    font-size: 90px;
+    color: transparent;
+    -webkit-text-stroke: 2px #FFF;
+    writing-mode: vertical-rl;
+}
+.hero__logo{
+ align-self: center;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 40px;
+}
+.card-hero{
+    min-height: 570px;
+    min-width: 250px;
+    background-color: #1F2326;
+
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+    position: relative;
+}
+
+.card__text{
+    display: flex;
+    padding-top: 60px;
+    margin-left: -30px;
+}
+.hero__name{
+    font-family: 'Druk Wide', sans-serif;
+    font-weight: 400;
+    font-size: 46px;
+    color: transparent;
+    -webkit-text-stroke: 2px #FFF;
+    writing-mode: vertical-rl;
+}
+.hero__country{
+    font-family: 'Druk Wide', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FF4656;
+    writing-mode: vertical-rl;
+}
+.hero__skils{
+    width: 100%;
+    background-color: #1F2326;
+    border: 2px solid #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -20px;
+    left: 15px;
+    padding: 5px 10px;
+}
+.phoenix{
+    background-image: url(../img/agents/phoenix/phoenix.png);
+}
+.jett{
+    background-image: url(../img/agents/jett/jett.png);
+}
+.sova{
+    background-image: url(../img/agents/sova/sova.png);
+}
+.sage{
+    background-image: url(../img/agents/sage/sage.png);
+}
