@@ -82,9 +82,9 @@ body{
     display: flex;
    align-items: center;
    justify-content: space-around;
+   flex-wrap: wrap;
 }
 .hero__header{
-    height: 100%;
     width: 250px;
     display: flex;
     justify-content: flex-start;
@@ -115,7 +115,9 @@ body{
     background-position: top right;
     background-size: cover;
     position: relative;
+    cursor: pointer;
 }
+
 
 .card__text{
     display: flex;
@@ -130,6 +132,13 @@ body{
     -webkit-text-stroke: 2px #FFF;
     writing-mode: vertical-rl;
 }
+.hero__name--active{
+   color: #1F2326;
+}
+.card-hero--active{
+    background-color:#FFF ;
+}
+
 .hero__country{
     font-family: 'Druk Wide', sans-serif;
     font-weight: 400;
@@ -161,4 +170,52 @@ body{
 }
 .sage{
     background-image: url(../img/agents/sage/sage.png);
+}
+.skils{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+  padding: 30px 30px;
+}
+.skil-cart{
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    padding: 18px 30px;
+    border: 2px solid #1F2326;
+    font-family: 'Druk Wide', sans-serif;
+    font-weight: 400;
+    background-color: #FFF;
+}
+.skil__type{
+    color: #C4C4C4;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.skil__name{
+    color: #000;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.skil__discription{
+    color: #1F2326;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.skil__logo{
+    width: 150px;
+    height: 80px;
+    background-color: #FF4656;
+    position: relative;
+}
+.skil__img{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: -10px;
+    margin-right: -10px;
 }

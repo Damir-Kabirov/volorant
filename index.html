@@ -52,7 +52,7 @@
             <h1 class="hero__title">AGENTS</h2>
         </div>
         <div class="cards">
-            <div class="card-hero phoenix">
+            <div class="card-hero phoenix" id="phoenix">
                 <div class="card__text">
                     <h4 class="hero__name">PHOENIX</h4>
                     <p class="hero__country">United Kingdom</p>
@@ -64,7 +64,7 @@
                     <img src="img/agents/phoenix/skil4.svg" alt="" class="skil">
                 </div>
             </div>
-            <div class="card-hero jett">
+            <div class="card-hero jett" id="jett">
                 <div class="card__text">
                     <h4 class="hero__name">JETT</h4>
                     <p class="hero__country">South Korea</p>
@@ -76,7 +76,7 @@
                     <img src="img/agents/phoenix/skil4.svg" alt="" class="skil">
                 </div>
             </div>
-            <div class="card-hero sova">
+            <div class="card-hero sova" id="sova">
                 <div class="card__text">
                     <h4 class="hero__name">SOVA</h4>
                     <p class="hero__country">Russia</p>
@@ -88,19 +88,52 @@
                     <img src="img/agents/phoenix/skil4.svg" alt="" class="skil">
                 </div>
             </div>
-            <div class="card-hero sage">
+            <div class="card-hero sage" id="sage">
                 <div class="card__text">
                     <h4 class="hero__name">SAGE</h4>
                     <p class="hero__country">China</p>
                 </div>
                 <div class="hero__skils">
-                    <img src="img/agents/phoenix/skil1.svg" alt="" class="skil">
-                    <img src="img/agents/phoenix/skil2.svg" alt="" class="skil">
-                    <img src="img/agents/phoenix/skil3.svg" alt="" class="skil">
-                    <img src="img/agents/phoenix/skil4.svg" alt="" class="skil">
+                    <img src="img/agents/phoenix/skil1.svg" alt="" class="hero-skil">
+                    <img src="img/agents/phoenix/skil2.svg" alt="" class="hero-skil">
+                    <img src="img/agents/phoenix/skil3.svg" alt="" class="hero-skil">
+                    <img src="img/agents/phoenix/skil4.svg" alt="" class="hero-skil">
                 </div>
             </div>
         </div>
+        <div class="skils">
+            <div class="skil-cart">
+              <div class="skil__info">
+                <p class="skil__type">BASIC</p>
+                <h5 class="skil__name">Slow Orb</h5>
+                <p class="skil__discription">Cast out a radianite orb that breaks into a slowing field upon impact with the ground.</p>
+              </div>
+              <div class="skil__logo">
+                <img src="img/agents/sage/skil-orb.svg" alt="" class="skil__img">
+              </div>
+            </div>
+            <div class="skil-cart">
+                <div class="skil__info">
+                  <p class="skil__type">SIGNATURE</p>
+                  <h5 class="skil__name">Healing Orb</h5>
+                  <p class="skil__discription">Heal an ally or yourself to full health over a few seconds.</p>
+                </div>
+                <div class="skil__logo">
+                  <img src="img/agents/sage/skil_healling.svg" alt="" class="skil__img">
+                </div>
+              </div>
+              <div class="skil-cart">
+                <div class="skil__info">
+                  <p class="skil__type">ULTIMATE</p>
+                  <h5 class="skil__name">Resurrection</h5>
+                  <p class="skil__discription">Target a friendly corpse. After a short delay, revive them with full health.</p>
+                </div>
+                <div class="skil__logo">
+                  <img src="img/agents/sage/resurrection.svg" alt="" class="skil__img">
+                </div>
+              </div>
+        </div>
     </section>
+    <script src="app.js"></script>
 </body>
 </html>
