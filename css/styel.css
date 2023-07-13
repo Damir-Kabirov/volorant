@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
+@import url('./media.css');
 @font-face {
     font-family: "Druk Wide";
     font-style: normal;
@@ -17,6 +17,9 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
+.db{
+    display: block;
+}
 .header{
     padding: 36px 60px;
     background-color: #1F2326;
@@ -26,6 +29,7 @@ body{
     justify-content: space-between;
     font-weight: 700;
     font-size: 14px;
+    position: relative;
 }
 .logo__slash{
     display: inline-block;
@@ -37,6 +41,51 @@ body{
 .logo__img{
     margin-left: 40px;
     
+}
+.logo{
+    margin-right: 40px;
+}
+.burder-menu{
+    width: 35px;
+    height: 2px;
+    background-color: #FFF;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    display: none;
+    margin-right: auto;
+}
+.burder-menu::after{
+    content: '';
+    position: absolute;
+    background-color: #FFF;
+    width: 35px;
+    height: 2px;
+    top: 100%;
+    margin-top: -10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.burder-menu::before{
+    content: '';
+    position: absolute;
+    background-color: #FFF;
+    width: 35px;
+    height: 2px;
+    top: 100%;
+    margin-top: 6px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 .nav__list{
     display: flex;
@@ -71,8 +120,7 @@ body{
 }
 /* Section Hero */
 .hero{
-    min-height: 1009px;
-    height: 100vh;
+    min-height: 100vh;
     background-blend-mode: multiply;
     background-image: url(../img/background.jpg);
     background-repeat: no-repeat;
@@ -83,6 +131,7 @@ body{
    align-items: center;
    justify-content: space-around;
    flex-wrap: wrap;
+   padding-top: 60px
 }
 .hero__header{
     width: 250px;
@@ -158,6 +207,7 @@ body{
     margin-bottom: -20px;
     left: 15px;
     padding: 5px 10px;
+    height: 80px;
 }
 .phoenix{
     background-image: url(../img/agents/phoenix/phoenix.png);
@@ -186,6 +236,7 @@ body{
     font-family: 'Druk Wide', sans-serif;
     font-weight: 400;
     background-color: #FFF;
+    justify-content: space-between;
 }
 .skil__type{
     color: #C4C4C4;
@@ -205,8 +256,7 @@ body{
 }
 
 .skil__logo{
-    width: 150px;
-    height: 80px;
+   padding: 40px;
     background-color: #FF4656;
     position: relative;
 }
@@ -218,4 +268,8 @@ body{
     right: 0;
     margin-top: -10px;
     margin-right: -10px;
+}
+.skil{
+   fill: #1F2326;
+
 }
